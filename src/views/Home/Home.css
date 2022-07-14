@@ -1,0 +1,130 @@
+
+body {
+    background-image: url(https://www.portotheme.com/magento2/porto/pub/media/wysiwyg/smartwave/porto/homepage/18/01n.jpg)!important;
+    background-repeat: no-repeat;
+  }
+  .Home_container {
+      position: absolute;
+      height: 50vh;
+      width: 45vw;
+      top: 24vh;
+      left: 5vw;
+      color: white;
+    }
+    .container_p {
+      font-size: 4vw;
+      font-weight: 100;
+    }
+    .container_p1 {
+      font-size: 1.5vw;
+      font-weight: 700;
+    }
+    .container_button {
+      padding: 1vh 2vw;
+      font-size: 2.5vw;
+      position: relative;
+      left: 18vw;
+      bottom: 8vh;
+      border-radius: 10px;
+      font-family: "Poppins";
+      background: #0000002b;
+      border: none;
+      outline: none;
+      box-shadow: 0px 0px 8px 3px black;
+    }
+    .container_button:hover {
+      background-color: #fff;
+      color: black;
+      transform: scale(1.1);
+      transition: all 1s;
+      box-shadow: 0px 0px 6px 4px white;
+      cursor: pointer;
+      border: white;
+      outline: none;
+    }
+    #span_1 {
+      font-size: 2vw;
+    }
+    #span_2 {
+      font-size: 7vw;
+      font-weight: 700;
+      padding-left: 1vw;
+    }
+    #span_3 {
+      padding: 0vh 1vw;
+      font-size: 3vw;
+      color: chartreuse;
+    }
+    .shoeImage {
+      width: 95vw;
+      position: absolute;
+      overflow-y: hidden;
+      top: 1vh;
+      left: 4vw;
+      z-index: -1;
+    }
+    
+    /* media quires */
+    @media only screen and (max-width: 950px) {
+      .container_button 
+      {
+        bottom: 5vh;  
+      }
+    }
+    @media only screen and (max-width: 800px) {
+      .container_button 
+      {
+        bottom: 1vh;  
+      }
+    }
+    @media only screen and (max-width: 840px) {
+      .shoeImage 
+      {
+        top: 4vh;
+        left: 7vw;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      .shoeImage 
+      {
+        top: 13vh;
+        left: -43vw;
+        width: 152vw;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .shoeImage 
+      {
+        top: 48vh;
+        left: -26vw;
+        width: 129vw;
+        transform: rotate3d(1, 0, 1, 35deg);
+      }
+      .Home_container
+      {
+        width: 90vw;
+      }
+      .container_p
+      {
+        font-size: 8vw;
+      }
+      .container_button
+      {
+        top: 5vh;
+        left: 0;
+        font-size: 4vw;
+      }
+     #span_1 {
+        font-size: 4vw;
+      }
+      #span_2 {
+        font-size: 10vw;
+      }
+      .container_p1 {
+        font-size: 2.5vw;
+      }
+      #span_3 {
+        font-size: 6vw;
+      }
+    }
+    
