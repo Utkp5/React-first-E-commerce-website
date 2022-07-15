@@ -3,78 +3,98 @@ import "./Products.css";
 import Navbar from "../../components/navbar/navbar";
 
 function Products() {
-  const [value,valupdate] = useState(0);
+  const [products,setProducts] = useState([
+    {
+      id : 0,
+      shoeImage : "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      productDetail : "Hartbeespoort",
+      productTitle : "Hartbee",
+      productTitle_b : "spoort",
+      badge : "New",
+      productCaption : "Basket Ball Collection",
+      productSize : "Size",
+      productColor : "Color",
+      productPrice_b : "23,453",
+      value : 0,
+    },
+    {
+      id : 1,
+      shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      productDetail : "Hartbeespoort",
+      productTitle : "Hartbee",
+      productTitle_b : "spoort",
+      badge : "New",
+      productCaption : "Basket Ball Collection",
+      productSize : "Size",
+      productColor : "Color",
+      productPrice_b : "23,453",
+      value : 0,
+    },
+    {
+      id : 2,
+      shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      productDetail : "Hartbeespoort",
+      productTitle : "Hartbee",
+      productTitle_b : "spoort",
+      badge : "New",
+      productCaption : "Basket Ball Collection",
+      productSize : "Size",
+      productColor : "Color",
+      productPrice_b : "23,453",
+      value : 0,
+    },
+    {
+      id : 3,
+      shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      productDetail : "Hartbeespoort",
+      productTitle : "Hartbee",
+      productTitle_b : "spoort",
+      badge : "New",
+      productCaption : "Basket Ball Collection",
+      productSize : "Size",
+      productColor : "Color",
+      productPrice_b : "23,453",
+      value : 0,
+    },
+    {
+      id : 4,
+      shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      productDetail : "Hartbeespoort",
+      productTitle : "Hartbee",
+      productTitle_b : "spoort",
+      badge : "New",
+      productCaption : "Basket Ball Collection",
+      productSize : "Size",
+      productColor : "Color",
+      productPrice_b : "23,453",
+      value : 0,
+    },
+    {
+      id : 5,
+      shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      productDetail : "Hartbeespoort",
+      productTitle : "Hartbee",
+      productTitle_b : "spoort",
+      badge : "New",
+      productCaption : "Basket Ball Collection",
+      productSize : "Size",
+      productColor : "Color",
+      productPrice_b : "23,453",
+      value : 0,
+    },
+  ]);
 
-  const products = [
-      {
-        shoeImage : "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        productDetail : "Hartbeespoort",
-        productTitle : "Hartbee",
-        productTitle_b : "spoort",
-        badge : "New",
-        productCaption : "Basket Ball Collection",
-        productSize : "Size",
-        productColor : "Color",
-        productPrice_b : "23,453",
-      },
-      {
-        shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        productDetail : "Hartbeespoort",
-        productTitle : "Hartbee",
-        productTitle_b : "spoort",
-        badge : "New",
-        productCaption : "Basket Ball Collection",
-        productSize : "Size",
-        productColor : "Color",
-        productPrice_b : "23,453",
-      },
-      {
-        shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        productDetail : "Hartbeespoort",
-        productTitle : "Hartbee",
-        productTitle_b : "spoort",
-        badge : "New",
-        productCaption : "Basket Ball Collection",
-        productSize : "Size",
-        productColor : "Color",
-        productPrice_b : "23,453",
-      },
-      {
-        shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        productDetail : "Hartbeespoort",
-        productTitle : "Hartbee",
-        productTitle_b : "spoort",
-        badge : "New",
-        productCaption : "Basket Ball Collection",
-        productSize : "Size",
-        productColor : "Color",
-        productPrice_b : "23,453",
-      },
-      {
-        shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        productDetail : "Hartbeespoort",
-        productTitle : "Hartbee",
-        productTitle_b : "spoort",
-        badge : "New",
-        productCaption : "Basket Ball Collection",
-        productSize : "Size",
-        productColor : "Color",
-        productPrice_b : "23,453",
-      },
-      {
-        shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        productDetail : "Hartbeespoort",
-        productTitle : "Hartbee",
-        productTitle_b : "spoort",
-        badge : "New",
-        productCaption : "Basket Ball Collection",
-        productSize : "Size",
-        productColor : "Color",
-        productPrice_b : "23,453",
-      },
-  ];
-
-
+  const increment = (id) => {
+    const newProducts = [...products];
+    newProducts[id].value = newProducts[id].value + 1;
+    setProducts(newProducts);
+  };
+ 
+  const decrement = (id) => {
+    const newProducts = [...products];
+    newProducts[id].value = newProducts[id].value - 1;
+    setProducts(newProducts);
+  };
 
   return (
     <div>
@@ -125,11 +145,13 @@ function Products() {
         </div>
         <div className="button_inc_dec">
         <button className="button_inc" onClick={() =>{
-          valupdate(value+1);
+            increment(product.id);
         }}>+</button>
-        <p className="result">{value}</p>
+
+        <p className="result">{product.value}</p>
+
         <button className="button_dec" onClick={() =>{
-         value > 0 ? valupdate(value -1): valupdate(value);
+          decrement(product.id)
         }}>-</button>
         <button className="Addtocart">ADD TO CART</button>
         </div>
