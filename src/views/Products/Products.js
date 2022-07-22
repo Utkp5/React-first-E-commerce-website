@@ -32,7 +32,7 @@ function Products() {
     },
     {
       id : 2,
-      shoeImage : "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      shoeImage : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdionp2FMzmFYoFgi1lIkuujCbwVUKCcWRg&usqp=CAU",
       productDetail : "Hartbeespoort",
       productTitle : "Hartbee",
       productTitle_b : "spoort",
@@ -85,7 +85,7 @@ function Products() {
   ]);
 
   const increment = (id) => {
-    const newProducts = [...products];
+    const newProducts = [...products]; // <-destructuring
     newProducts[id].value = newProducts[id].value + 1;
     setProducts(newProducts);
   };
@@ -104,6 +104,7 @@ function Products() {
     <img className="banner_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUZGQA_-P3K4LEPYSGqqJlc2MXXYOBGPW6IA&usqp=CAU" alt="" />
     </div>
     
+    <div className="display_flex">
     {
       products.map((product) => {
         return (
@@ -156,13 +157,14 @@ function Products() {
         <button className="Addtocart">ADD TO CART</button>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
+      )
+    })
+  }
   </div>
-        )
-      })
-    }
-    
-</div>
+  
+  </div>
   );
 }
 

@@ -243,17 +243,6 @@ body {
 .product-price b {
   margin-left: 5px;
 }
-.yt {
-  position: fixed;
-  padding: 7px 10px 3px 10px;
-  top: 5px;
-  right: 5px;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.yt:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
 
 .button_inc_dec
 {
@@ -301,4 +290,8 @@ body {
     border-radius: 5px;
     color: white;
     cursor: pointer;
+}
+.display_flex
+{
+  display: flex;
 }
