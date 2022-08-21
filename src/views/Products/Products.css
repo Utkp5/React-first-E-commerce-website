@@ -26,8 +26,7 @@ body {
 
 .container {
     width: 280px;
-    height: 500px;
-    margin: 49vh 2vw;
+    margin: 6vh 2vw;
 }
 
 .card {
@@ -294,4 +293,6 @@ body {
 .display_flex
 {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 8vh;
 }
