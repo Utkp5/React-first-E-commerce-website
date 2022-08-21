@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+here is deployed link of this website
+https://e-commerece-by-pandit-utkarsh.netlify.app/
 
 ## Available Scripts
 
